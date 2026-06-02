@@ -204,6 +204,6 @@ https://github.com/nitukhorshed/travel-planner
 
 ## Author
 
-Name: [Your Name]
-Student ID: [Your Student ID]
-Course: CSE 472 - Web and Internet Programming
+Name: Tamanna Khorshed Nitu
+Student ID: 2023100000300
+Course: CSE 472.1 - Web and Internet Programming Lab
