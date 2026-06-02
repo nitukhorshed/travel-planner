@@ -196,7 +196,7 @@ Add live link here:
 
 ## GitHub Repository
 
-Add repository link here:
+https://github.com/nitukhorshed/travel-planner
 
 ```text
 [GitHub Repository Link]
