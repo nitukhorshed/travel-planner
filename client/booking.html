@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Package</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="booking-page">
+
+  <div class="booking-layout">
+
+    <div class="booking-package" id="packageInfo">
+      Loading package...
+    </div>
+
+    <div class="booking-form-card">
+
+      <h2>Book This Package</h2>
+
+      <form id="bookingForm">
+
+        <label>Number of Travelers</label>
+
+        <input
+          type="number"
+          id="travelers"
+          min="1"
+          value="1"
+          required
+        >
+
+        <label>Special Request</label>
+
+        <textarea
+          id="specialRequest"
+          rows="4"
+          placeholder="Optional..."
+        ></textarea>
+
+        <div class="booking-total">
+          Total: <span id="totalPrice">৳0</span>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          Confirm Booking
+        </button>
+
+      </form>
+
+      <p id="bookingMessage"></p>
+
+    </div>
+
+  </div>
+
+</section>
+<div id="toastContainer"></div>
+
+<script src="js/navbarAuth.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/booking.js"></script>
+
+</body>
+</html>

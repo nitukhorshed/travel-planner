@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <section class="auth-page">
+    <div class="auth-card">
+        <a href="index.html" class="back-home">
+         ← Back to Home</a>
+      <h2>Create Account</h2>
+      <p>Join Travel Planner as traveler or planner</p>
+
+      <form id="registerForm">
+        <input type="text" id="fullName" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <input type="password" id="password" placeholder="Password" required />
+
+        <select id="role" required>
+          <option value="user">Traveler</option>
+          <option value="planner">Planner / Organization</option>
+        </select>
+
+        <input
+          type="text"
+          id="organizationName"
+          placeholder="Organization Name"
+          class="hidden"
+        />
+
+        <button type="submit" class="btn-primary auth-btn">Register</button>
+      </form>
+
+      <p class="auth-link">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+
+      <p id="registerMessage"></p>
+    </div>
+  </section>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

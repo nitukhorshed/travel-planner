@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planner Dashboard - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="planner-dashboard.html">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="dashboard-page">
+
+  <div class="dashboard-header">
+    <h1>Planner Dashboard</h1>
+    <p>Manage your packages, bookings and organization profile.</p>
+  </div>
+
+  <div class="dashboard-stats">
+    <div class="stat-card">
+      <h3 id="totalPackages">0</h3>
+      <p>Total Packages</p>
+    </div>
+
+    <div class="stat-card">
+      <h3 id="totalBookings">0</h3>
+      <p>Total Bookings</p>
+    </div>
+
+    <div class="stat-card">
+      <h3 id="pendingBookings">0</h3>
+      <p>Pending Bookings</p>
+    </div>
+  </div>
+
+  <div class="dashboard-actions">
+    <a href="planner-packages.html" class="dashboard-action-card">
+      <h3>My Packages</h3>
+      <p>Add, edit and delete your tour packages.</p>
+    </a>
+
+    <a href="planner-bookings.html" class="dashboard-action-card">
+      <h3>Manage Bookings</h3>
+      <p>Approve or cancel customer booking requests.</p>
+    </a>
+
+    <a href="planner-profile.html" class="dashboard-action-card">
+      <h3>Planner Profile</h3>
+      <p>Update your organization information.</p>
+    </a>
+  </div>
+
+</section>
+<div id="toastContainer"></div>
+
+<script src="js/navbarAuth.js"></script>
+<script src="js/planner-dashboard.js"></script>
+</body>
+</html>

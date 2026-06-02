@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Package - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="planner-dashboard.html">Dashboard</a></li>
+      <li><a href="planner-packages.html">My Packages</a></li>
+    </ul>
+  </nav>
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="dashboard-page">
+  <div class="dashboard-header">
+    <h1>Edit Package</h1>
+    <p>Update your tour package information.</p>
+  </div>
+
+  <form id="editPackageForm" class="package-form">
+
+    <input type="text" id="title" placeholder="Package Title" required>
+    <input type="text" id="destination" placeholder="Destination" required>
+    <input type="text" id="startLocation" placeholder="Start Location" required>
+
+    <select id="category" required>
+      <option value="">Select Category</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Beach">Beach</option>
+      <option value="Family">Family</option>
+      <option value="Couple">Couple</option>
+      <option value="Luxury">Luxury</option>
+      <option value="Religious">Religious</option>
+      <option value="Nature">Nature</option>
+      <option value="Cultural">Cultural</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <textarea id="description" placeholder="Package Description" rows="4" required></textarea>
+
+    <input type="number" id="price" placeholder="Price" required>
+    <input type="number" id="duration" placeholder="Duration in Days" required>
+    <input type="number" id="totalSeats" placeholder="Total Seats" required>
+    <input type="number" id="availableSeats" placeholder="Available Seats" required>
+
+    <select id="status" required>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+
+    <label>Package Gallery Images</label>
+    <input type="file" id="packageImages" accept="image/*" multiple>
+
+    <div id="imagePreview"></div>
+
+    <h2>Itinerary</h2>
+    <div id="itineraryContainer"></div>
+
+    <button type="button" class="btn-outline" id="addDayBtn">
+      + Add Day
+    </button>
+
+    <button type="submit" class="btn-primary">
+      Update Package
+    </button>
+
+    <p id="editPackageMessage"></p>
+  </form>
+</section>
+<div id="toastContainer"></div>
+
+<script src="js/navbarAuth.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/edit-package.js"></script>
+</body>
+</html>

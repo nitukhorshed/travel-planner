@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Packages - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <button class="dropdown-toggle">Packages ▾</button>
+            <div class="dropdown-menu">
+                <a href="packages.html">All Packages</a>
+                <a href="packages.html?category=Beach">Beach Tours</a>
+                <a href="packages.html?category=Adventure">Adventure Tours</a>
+                <a href="packages.html?category=Family">Family Tours</a>
+                <a href="packages.html?category=Luxury">Luxury Tours</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <button class="dropdown-toggle">Trending Tours ▾</button>
+            <div class="dropdown-menu">
+                <a href="packages.html?sort=popular">Most Booked</a>
+                <a href="index.html#trending">Trending Section</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <button class="dropdown-toggle">Featured Planners ▾</button>
+            <div class="dropdown-menu">
+                <a href="index.html#planners">Verified Planners</a>
+                <a href="index.html#planners">Top Planners</a>
+                <a href="index.html#planners">New Organizations</a>
+            </div>
+        </li>
+
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="packages-page">
+  <div class="section-header">
+    <h2>Explore Tour Packages</h2>
+  </div>
+
+  <div class="filter-box">
+    <input type="text" id="searchInput" placeholder="Search destination or package..." />
+
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+      <option value="Beach">Beach</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Family">Family</option>
+      <option value="Couple">Couple</option>
+      <option value="Luxury">Luxury</option>
+      <option value="Nature">Nature</option>
+    </select>
+
+    <select id="sortFilter">
+      <option value="">Newest</option>
+      <option value="price-low">Price Low to High</option>
+      <option value="price-high">Price High to Low</option>
+      <option value="popular">Most Popular</option>
+    </select>
+
+    <button class="btn-primary" id="searchBtn">Search</button>
+  </div>
+
+  <div class="card-grid package-list-grid" id="packageList"></div>
+</section>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div>
+        <h3>Travel Planner</h3>
+        <p>
+            Discover nature, adventure and eco tourism experiences
+            across Bangladesh.
+        </p>
+        </div>
+
+        <div>
+        <h4>Quick Links</h4>
+
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+        <h4>Categories</h4>
+
+        <a href="packages.html?category=Adventure">Adventure</a>
+        <a href="packages.html?category=Beach">Beach</a>
+        <a href="packages.html?category=Nature">Nature</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Travel Planner. All rights reserved.
+    </div>
+    </footer>
+    <div id="toastContainer"></div>
+
+<script src="js/api.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/navbarAuth.js"></script>
+<script src="js/packages.js"></script>
+</body>
+</html>

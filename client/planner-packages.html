@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Packages - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="planner-dashboard.html">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="dashboard-page">
+
+  <div class="dashboard-header dashboard-header-row">
+    <div>
+      <h1>My Packages</h1>
+      <p>Manage all tour packages created by your organization.</p>
+    </div>
+
+    <a href="create-package.html" class="btn-primary add-package-btn">
+      + Add Package
+    </a>
+  </div>
+
+  <div id="plannerPackagesList" class="planner-package-list">
+    Loading packages...
+  </div>
+
+</section>
+<div id="toastContainer"></div>
+
+<script src="js/navbarAuth.js"></script>
+<script src="js/planner-packages.js"></script>
+</body>
+</html>

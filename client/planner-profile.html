@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planner Profile - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="planner-dashboard.html">Dashboard</a></li>
+      <li><a href="planner-packages.html">My Packages</a></li>
+      <li><a href="planner-bookings.html">Bookings</a></li>
+      <li><a href="planner-profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="dashboard-page">
+  <div class="dashboard-header">
+    <h1>Planner Profile</h1>
+    <p>Update your organization information.</p>
+  </div>
+
+  <form id="plannerProfileForm" class="package-form">
+    <input type="text" id="organizationName" placeholder="Organization Name" required>
+    <input type="text" id="logo" placeholder="Logo URL">
+    <input type="text" id="coverImage" placeholder="Cover Image URL">
+    <textarea id="description" placeholder="Description" rows="4"></textarea>
+    <input type="text" id="phone" placeholder="Phone">
+    <input type="text" id="website" placeholder="Website">
+    <input type="text" id="address" placeholder="Address">
+
+    <button type="submit" class="btn-primary">Update Profile</button>
+
+    <p id="profileMessage"></p>
+  </form>
+</section>
+
+<script src="js/navbarAuth.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/planner-profile.js"></script>
+
+</body>
+</html>

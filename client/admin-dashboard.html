@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="admin-dashboard.html">Dashboard</a></li>
+      <li><a href="admin-planners.html">Planners</a></li>
+      <li><a href="admin-planner-profiles.html">Planner Profiles</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="dashboard-page">
+
+  <div class="dashboard-header">
+    <h1>Admin Dashboard</h1>
+    <p>Manage planners, packages and platform activity.</p>
+  </div>
+
+  <div class="dashboard-stats">
+
+    <div class="stat-card">
+        <h3 id="totalUsers">0</h3>
+        <p>Total Users</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="totalPlanners">0</h3>
+        <p>Total Planners</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="pendingPlanners">0</h3>
+        <p>Pending Planners</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="approvedPlanners">0</h3>
+        <p>Approved Planners</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="totalPackages">0</h3>
+        <p>Total Packages</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="totalBookings">0</h3>
+        <p>Total Bookings</p>
+    </div>
+
+  </div>
+
+  <div class="dashboard-actions">
+
+    <a href="admin-planners.html" class="dashboard-action-card">
+        <h3>Manage Planners</h3>
+        <p>Approve or reject planner requests.</p>
+    </a>
+
+    <a href="admin-planner-profiles.html" class="dashboard-action-card">
+        <h3>Manage Planner Profiles</h3>
+        <p>Verify or unverify planner organization profiles.</p>
+    </a>
+
+    <a href="admin-packages.html" class="dashboard-action-card">
+        <h3>Manage Packages</h3>
+        <p>View and manage platform packages.</p>
+    </a>
+
+    <a href="admin-statistics.html" class="dashboard-action-card">
+        <h3>Platform Statistics</h3>
+        <p>Monitor platform growth and activity.</p>
+    </a>
+
+  </div>
+
+</section>
+<div id="toastContainer"></div>
+
+<script src="js/navbarAuth.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+</html>

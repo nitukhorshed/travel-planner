@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="dashboard-page">
+
+  <div class="dashboard-header">
+    <h1>Edit Profile</h1>
+    <p>Update your account information.</p>
+  </div>
+
+  <form id="editProfileForm" class="package-form">
+
+    <input
+      type="text"
+      id="fullName"
+      placeholder="Full Name"
+      required
+    >
+
+    <input
+      type="email"
+      id="email"
+      placeholder="Email Address"
+      required
+    >
+
+    <input
+      type="password"
+      id="password"
+      placeholder="New Password optional"
+    >
+
+    <button type="submit" class="btn-primary">
+      Update Profile
+    </button>
+
+    <p id="editProfileMessage"></p>
+
+  </form>
+
+</section>
+
+<script src="js/navbarAuth.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/edit-profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platform Statistics - Travel Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Travel Planner</div>
+
+  <nav>
+    <ul>
+      <li><a href="admin-dashboard.html">Dashboard</a></li>
+      <li><a href="admin-planners.html">Planners</a></li>
+      <li><a href="admin-planner-profiles.html">Planner Profiles</a></li>
+      <li><a href="admin-packages.html">Packages</a></li>
+      <li><a href="admin-statistics.html">Statistics</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-buttons"></div>
+</header>
+
+<section class="dashboard-page">
+  <div class="dashboard-header">
+    <h1>Platform Statistics</h1>
+    <p>Overview of users, planners, packages and bookings.</p>
+  </div>
+
+  <div class="statistics-grid">
+
+    <div class="statistics-card">
+      <h3>Users & Planners</h3>
+      <p>Total Users: <span id="totalUsers">0</span></p>
+      <p>Total Planners: <span id="totalPlanners">0</span></p>
+      <p>Pending Planners: <span id="pendingPlanners">0</span></p>
+      <p>Approved Planners: <span id="approvedPlanners">0</span></p>
+      <p>Rejected Planners: <span id="rejectedPlanners">0</span></p>
+    </div>
+
+    <div class="statistics-card">
+      <h3>Packages</h3>
+      <p>Total Packages: <span id="totalPackages">0</span></p>
+      <p>Active Packages: <span id="activePackages">0</span></p>
+      <p>Inactive Packages: <span id="inactivePackages">0</span></p>
+      <p>Featured Packages: <span id="featuredPackages">0</span></p>
+    </div>
+
+    <div class="statistics-card">
+      <h3>Bookings</h3>
+      <p>Total Bookings: <span id="totalBookings">0</span></p>
+      <p>Pending Bookings: <span id="pendingBookings">0</span></p>
+      <p>Approved Bookings: <span id="approvedBookings">0</span></p>
+      <p>Cancelled Bookings: <span id="cancelledBookings">0</span></p>
+    </div>
+
+  </div>
+</section>
+<div id="toastContainer"></div>
+
+<script src="js/navbarAuth.js"></script>
+<script src="js/admin-statistics.js"></script>
+
+</body>
+</html>
