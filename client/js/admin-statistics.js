@@ -7,7 +7,7 @@ if (!adminStatsToken || !adminStatsUser || adminStatsUser.role !== "admin") {
 
 const loadStatistics = async () => {
   try {
-    const res = await fetch("http://localhost:5001/api/admin/stats", {
+    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/admin/stats", {
       headers: {
         Authorization: `Bearer ${adminStatsToken}`,
       },

@@ -6,7 +6,7 @@ if (!adminPackageToken || !adminPackageUser || adminPackageUser.role !== "admin"
 }
 
 const adminPackagesList = document.getElementById("adminPackagesList");
-const adminPackageImageBase = "http://localhost:5001";
+const adminPackageImageBase = "http://travel-planner-3ro5.onrender.com";
 
 const getAdminPackageImage = (images) => {
   if (images && images.length > 0) {
@@ -20,7 +20,7 @@ const getAdminPackageImage = (images) => {
 
 const loadAdminPackages = async () => {
   try {
-    const res = await fetch("http://localhost:5001/api/packages");
+    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/packages");
     const data = await res.json();
 
     const packages = data.packages || data;

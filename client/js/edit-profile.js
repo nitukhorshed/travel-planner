@@ -10,7 +10,7 @@ const editProfileMessage = document.getElementById("editProfileMessage");
 
 const loadProfile = async () => {
   try {
-    const res = await fetch("http://localhost:5001/api/auth/profile", {
+    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/auth/profile", {
       headers: {
         Authorization: `Bearer ${editProfileToken}`,
       },
@@ -50,7 +50,7 @@ editProfileForm.addEventListener("submit", async (e) => {
   }
 
   try {
-    const res = await fetch("http://localhost:5001/api/auth/profile", {
+    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/auth/profile", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -12,7 +12,7 @@ if (
 const plannerProfilesList =
   document.getElementById("plannerProfilesList");
 
-const imageBaseUrlAdminProfile = "http://localhost:5001";
+const imageBaseUrlAdminProfile = "http://travel-planner-3ro5.onrender.com";
 
 const getProfileImage = (url) => {
   if (!url) {
@@ -27,7 +27,7 @@ const getProfileImage = (url) => {
 const loadPlannerProfiles = async () => {
   try {
     const res = await fetch(
-      "http://localhost:5001/api/admin/planner-profiles",
+      "http://travel-planner-3ro5.onrender.com/api/admin/planner-profiles",
       {
         headers: {
           Authorization: `Bearer ${adminProfileToken}`,
@@ -89,7 +89,7 @@ const loadPlannerProfiles = async () => {
 const verifyProfile = async (profileId) => {
   try {
     const res = await fetch(
-      `http://localhost:5001/api/admin/planner-profiles/${profileId}/verify`,
+      `http://travel-planner-3ro5.onrender.com/api/admin/planner-profiles/${profileId}/verify`,
       {
         method: "PUT",
         headers: {
@@ -114,7 +114,7 @@ const verifyProfile = async (profileId) => {
 const unverifyProfile = async (profileId) => {
   try {
     const res = await fetch(
-      `http://localhost:5001/api/admin/planner-profiles/${profileId}/unverify`,
+      `http://travel-planner-3ro5.onrender.com/api/admin/planner-profiles/${profileId}/unverify`,
       {
         method: "PUT",
         headers: {

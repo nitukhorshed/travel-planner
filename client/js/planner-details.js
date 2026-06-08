@@ -1,7 +1,7 @@
 const plannerDetailsContainer = document.getElementById("plannerDetails");
 const plannerPackagesContainer = document.getElementById("plannerPackages");
 
-const imageBaseUrlPlannerDetails = "http://localhost:5001";
+const imageBaseUrlPlannerDetails = "http://travel-planner-3ro5.onrender.com";
 
 const params = new URLSearchParams(window.location.search);
 const plannerId = params.get("id");
@@ -34,7 +34,7 @@ const getPackageImage = (images) => {
 const loadPlannerDetails = async () => {
   try {
     const profileRes = await fetch(
-      `http://localhost:5001/api/planner-profile/${plannerId}`
+      `http://travel-planner-3ro5.onrender.com/api/planner-profile/${plannerId}`
     );
 
     const profile = await profileRes.json();
@@ -79,7 +79,7 @@ const loadPlannerDetails = async () => {
 
 const loadPlannerPackages = async () => {
   try {
-    const res = await fetch("http://localhost:5001/api/packages");
+    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/packages");
     const data = await res.json();
 
     const packages = data.packages || data;

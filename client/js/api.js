@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5001/api";
+const API_BASE_URL = "http://travel-planner-3ro5.onrender.com/api";
 
 const api = {
   getFeaturedPackages: async () => {

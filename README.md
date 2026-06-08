@@ -98,7 +98,7 @@ npm run dev
 The backend will run on:
 
 ```text
-http://localhost:5001
+https://travel-planner-3ro5.onrender.com
 ```
 
 ### Frontend Setup
@@ -108,7 +108,7 @@ Open the `client/` folder using Live Server or Live Preview.
 The frontend may run on:
 
 ```text
-http://localhost:3000
+http://travel-planner-web.netlify.app
 ```
 
 ## Important API Endpoints

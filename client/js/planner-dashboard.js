@@ -7,13 +7,13 @@ if (!plannerToken || !plannerUser || plannerUser.role !== "planner") {
 
 const loadPlannerDashboard = async () => {
   try {
-    const packagesRes = await fetch("http://localhost:5001/api/packages/my-packages", {
+    const packagesRes = await fetch("http://travel-planner-3ro5.onrender.com/api/packages/my-packages", {
       headers: {
         Authorization: `Bearer ${plannerToken}`,
       },
     });
 
-    const bookingsRes = await fetch("http://localhost:5001/api/bookings/planner-bookings", {
+    const bookingsRes = await fetch("http://travel-planner-3ro5.onrender.com/api/bookings/planner-bookings", {
       headers: {
         Authorization: `Bearer ${plannerToken}`,
       },

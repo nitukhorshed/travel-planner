@@ -30,7 +30,7 @@ if (!packageId) {
 const getImageUrl = (images) => {
   if (images && images.length > 0) {
     return images[0].startsWith("/uploads")
-      ? `http://localhost:5001${images[0]}`
+      ? `http://travel-planner-3ro5.onrender.com${images[0]}`
       : images[0];
   }
 
@@ -149,7 +149,7 @@ const refreshDayNumbers = () => {
 
 const loadPackage = async () => {
   try {
-    const res = await fetch(`http://localhost:5001/api/packages/${packageId}`);
+    const res = await fetch(`http://travel-planner-3ro5.onrender.com/api/packages/${packageId}`);
     const pkg = await res.json();
 
     if (!res.ok) {
@@ -176,7 +176,7 @@ const loadPackage = async () => {
           .map(
             (img) => `
               <img
-                src="${img.startsWith("/uploads") ? "http://localhost:5001" + img : img}"
+                src="${img.startsWith("/uploads") ? "http://travel-planner-3ro5.onrender.com" + img : img}"
                 class="image-preview"
               >
             `
@@ -210,7 +210,7 @@ const uploadImages = async () => {
     });
 
     const res = await fetch(
-      "http://localhost:5001/api/uploads/package-images",
+      "http://travel-planner-3ro5.onrender.com/api/uploads/package-images",
       {
         method: "POST",
         headers: {
@@ -237,7 +237,7 @@ imageInput.addEventListener("change", () => {
       .map(
         (img) => `
           <img
-            src="${img.startsWith("/uploads") ? "http://localhost:5001" + img : img}"
+            src="${img.startsWith("/uploads") ? "http://travel-planner-3ro5.onrender.com" + img : img}"
             class="image-preview"
           >
         `
@@ -262,7 +262,7 @@ imageInput.addEventListener("change", () => {
     .map(
       (img) => `
         <img
-          src="${img.startsWith("/uploads") ? "http://localhost:5001" + img : img}"
+          src="${img.startsWith("/uploads") ? "http://travel-planner-3ro5.onrender.com" + img : img}"
           class="image-preview"
         >
       `
@@ -321,7 +321,7 @@ form.addEventListener("submit", async (e) => {
       itinerary: collectItinerary(),
     };
 
-    const res = await fetch(`http://localhost:5001/api/packages/${packageId}`, {
+    const res = await fetch(`http://travel-planner-3ro5.onrender.com/api/packages/${packageId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

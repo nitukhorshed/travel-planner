@@ -1,6 +1,6 @@
 const myBookingToken = localStorage.getItem("token");
 const bookingsList = document.getElementById("myBookingsList");
-const imageBaseUrl = "http://localhost:5001";
+const imageBaseUrl = "http://travel-planner-3ro5.onrender.com";
 
 if (!myBookingToken) {
   window.location.href = "login.html";
@@ -24,7 +24,7 @@ const getImageUrl = (images) => {
 
 const loadMyBookings = async () => {
   try {
-    const res = await fetch("http://localhost:5001/api/bookings/my-bookings", {
+    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/bookings/my-bookings", {
       headers: {
         Authorization: `Bearer ${myBookingToken}`,
       },

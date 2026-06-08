@@ -1,4 +1,4 @@
-const imageBaseUrl = "http://localhost:5001";
+const imageBaseUrl = "http://travel-planner-3ro5.onrender.com";
 const detailsContainer = document.getElementById("packageDetails");
 
 const params = new URLSearchParams(window.location.search);
@@ -92,7 +92,7 @@ const loadPackageDetails = async () => {
   }
 
   try {
-    const res = await fetch(`http://localhost:5001/api/packages/${packageId}`);
+    const res = await fetch(`http://travel-planner-3ro5.onrender.com/api/packages/${packageId}`);
     const pkg = await res.json();
 
     if (!res.ok) {

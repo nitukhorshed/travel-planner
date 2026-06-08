@@ -19,7 +19,7 @@ let packagePrice = 0;
 const getImageUrl = (images) => {
   if (images && images.length > 0) {
     return images[0].startsWith("/uploads")
-      ? `http://localhost:5001${images[0]}`
+      ? `http://travel-planner-3ro5.onrender.com${images[0]}`
       : images[0];
   }
 
@@ -29,7 +29,7 @@ const getImageUrl = (images) => {
 const loadPackage = async () => {
   try {
     const res = await fetch(
-      `http://localhost:5001/api/packages/${packageId}`
+      `http://travel-planner-3ro5.onrender.com/api/packages/${packageId}`
     );
 
     const pkg = await res.json();
@@ -83,7 +83,7 @@ document
     const specialRequest = document.getElementById("specialRequest").value;
 
     try {
-      const res = await fetch("http://localhost:5001/api/bookings", {
+      const res = await fetch("http://travel-planner-3ro5.onrender.com/api/bookings", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

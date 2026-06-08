@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5001/api/auth";
+const API_URL = "http://travel-planner-3ro5.onrender.com/api/auth";
 
 const roleSelect = document.getElementById("role");
 const organizationInput = document.getElementById("organizationName");
