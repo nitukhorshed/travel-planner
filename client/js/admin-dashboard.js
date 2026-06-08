@@ -13,7 +13,7 @@ const loadDashboard = async () => {
   try {
 
     const res = await fetch(
-      "http://travel-planner-3ro5.onrender.com/api/admin/stats",
+      "https://travel-planner-3ro5.onrender.com/api/admin/stats",
       {
         headers: {
           Authorization: `Bearer ${adminToken}`,

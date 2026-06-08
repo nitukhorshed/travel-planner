@@ -1,4 +1,4 @@
-const imageBaseUrl = "http://travel-planner-3ro5.onrender.com";
+const imageBaseUrl = "https://travel-planner-3ro5.onrender.com";
 const homeSearchInput = document.getElementById("homeSearchInput");
 const homeSearchBtn = document.getElementById("homeSearchBtn");
 
@@ -134,7 +134,7 @@ loadHomeData();
 
 const loadPublicStats = async () => {
   try {
-    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/statistics/public");
+    const res = await fetch("https://travel-planner-3ro5.onrender.com/api/statistics/public");
     const stats = await res.json();
 
     document.getElementById("happyTravelers").textContent = stats.happyTravelers;

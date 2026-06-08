@@ -79,7 +79,7 @@ const uploadImages = async () => {
     formData.append("images", file);
   });
 
-  const res = await fetch("http://travel-planner-3ro5.onrender.com/api/uploads/package-images", {
+  const res = await fetch("https://travel-planner-3ro5.onrender.com/api/uploads/package-images", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${createPackageToken}`,
@@ -164,7 +164,7 @@ form.addEventListener("submit", async (e) => {
       status: "active",
     };
 
-    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/packages", {
+    const res = await fetch("https://travel-planner-3ro5.onrender.com/api/packages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

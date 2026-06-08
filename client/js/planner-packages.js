@@ -11,7 +11,7 @@ if (
   window.location.href = "login.html";
 }
 
-const imageBaseUrlPlanner = "http://travel-planner-3ro5.onrender.com";
+const imageBaseUrlPlanner = "https://travel-planner-3ro5.onrender.com";
 
 const getPlannerPackageImage = (images) => {
   if (images && images.length > 0) {
@@ -25,7 +25,7 @@ const getPlannerPackageImage = (images) => {
 
 const loadPlannerPackages = async () => {
   try {
-    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/packages/my-packages", {
+    const res = await fetch("https://travel-planner-3ro5.onrender.com/api/packages/my-packages", {
       headers: {
         Authorization: `Bearer ${plannerPackageToken}`,
       },
@@ -83,7 +83,7 @@ const deletePackage = async (id) => {
   if (!confirmDelete) return;
 
   try {
-    const res = await fetch(`http://travel-planner-3ro5.onrender.com/api/packages/${id}`, {
+    const res = await fetch(`https://travel-planner-3ro5.onrender.com/api/packages/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${plannerPackageToken}`,

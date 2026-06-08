@@ -1,5 +1,5 @@
 const plannerList = document.getElementById("plannerList");
-const plannerImageBase = "http://travel-planner-3ro5.onrender.com";
+const plannerImageBase = "https://travel-planner-3ro5.onrender.com";
 
 const getPlannerImage = (url) => {
   if (!url) {
@@ -13,7 +13,7 @@ const getPlannerImage = (url) => {
 
 const loadPlanners = async () => {
   try {
-    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/planner-profile/featured");
+    const res = await fetch("https://travel-planner-3ro5.onrender.com/api/planner-profile/featured");
     const planners = await res.json();
 
     plannerList.innerHTML = planners.length

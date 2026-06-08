@@ -14,7 +14,7 @@ const message = document.getElementById("profileMessage");
 
 const loadPlannerProfile = async () => {
   try {
-    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/planner-profile/me", {
+    const res = await fetch("https://travel-planner-3ro5.onrender.com/api/planner-profile/me", {
       headers: {
         Authorization: `Bearer ${plannerProfileToken}`,
       },
@@ -54,7 +54,7 @@ form.addEventListener("submit", async (e) => {
   };
 
   try {
-    const res = await fetch("http://travel-planner-3ro5.onrender.com/api/planner-profile", {
+    const res = await fetch("https://travel-planner-3ro5.onrender.com/api/planner-profile", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

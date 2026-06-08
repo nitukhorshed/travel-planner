@@ -12,7 +12,7 @@ if (
   window.location.href = "login.html";
 }
 
-const imageBaseUrl = "http://travel-planner-3ro5.onrender.com";
+const imageBaseUrl = "https://travel-planner-3ro5.onrender.com";
 
 const getImageUrl = (images) => {
   if (images && images.length > 0) {
@@ -34,7 +34,7 @@ const loadPlannerBookings = async () => {
   try {
 
     const res = await fetch(
-      "http://travel-planner-3ro5.onrender.com/api/bookings/planner-bookings",
+      "https://travel-planner-3ro5.onrender.com/api/bookings/planner-bookings",
       {
         headers: {
           Authorization: `Bearer ${plannerBookingToken}`,
@@ -135,7 +135,7 @@ const approveBooking = async (bookingId) => {
   try {
 
     const res = await fetch(
-      `http://travel-planner-3ro5.onrender.com/api/bookings/${bookingId}/approve`,
+      `https://travel-planner-3ro5.onrender.com/api/bookings/${bookingId}/approve`,
       {
         method: "PUT",
         headers: {
@@ -168,7 +168,7 @@ const cancelBooking = async (bookingId) => {
   try {
 
     const res = await fetch(
-      `http://travel-planner-3ro5.onrender.com/api/bookings/${bookingId}/cancel`,
+      `https://travel-planner-3ro5.onrender.com/api/bookings/${bookingId}/cancel`,
       {
         method: "PUT",
         headers: {

@@ -33,7 +33,7 @@ const loadPlanners = async () => {
   try {
 
     const res = await fetch(
-      "http://travel-planner-3ro5.onrender.com/api/admin/planners",
+      "https://travel-planner-3ro5.onrender.com/api/admin/planners",
       {
         headers: {
           Authorization:
@@ -124,7 +124,7 @@ const approvePlanner = async (plannerId) => {
   try {
 
     const res = await fetch(
-      `http://travel-planner-3ro5.onrender.com/api/admin/planners/${plannerId}/approve`,
+      `https://travel-planner-3ro5.onrender.com/api/admin/planners/${plannerId}/approve`,
       {
         method: "PUT",
         headers: {
@@ -157,7 +157,7 @@ const rejectPlanner = async (plannerId) => {
   try {
 
     const res = await fetch(
-      `http://travel-planner-3ro5.onrender.com/api/admin/planners/${plannerId}/reject`,
+      `https://travel-planner-3ro5.onrender.com/api/admin/planners/${plannerId}/reject`,
       {
         method: "PUT",
         headers: {

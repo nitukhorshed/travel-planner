@@ -1,5 +1,5 @@
 const packageList = document.getElementById("packageList");
-const imageBaseUrl = "http://travel-planner-3ro5.onrender.com";
+const imageBaseUrl = "https://travel-planner-3ro5.onrender.com";
 
 const getImageUrl = (images) => {
   if (images && images.length > 0) {
@@ -61,7 +61,7 @@ const loadPackages = async () => {
   if (sort) query.push(`sort=${encodeURIComponent(sort)}`);
 
   const url =
-    `http://travel-planner-3ro5.onrender.com/api/packages` +
+    `https://travel-planner-3ro5.onrender.com/api/packages` +
     (query.length ? `?${query.join("&")}` : "");
 
   const res = await fetch(url);
